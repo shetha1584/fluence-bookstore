@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluence Bookstore</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #560e8a, #8e2de2); /* Purple gradient */
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Bar */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #560e8a; /* Dark Purple */
+            padding: 15px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #FFD700; /* Gold on hover */
+        }
+
+        /* Home Section */
+        .home-section {
+            background-image: url('https://images.unsplash.com/photo-1600300875685-d9b1659e99b1'); /* Book-themed background */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            padding: 40px;
+            border-radius: 15px;
+            color: #333;
+            text-align: left;
+            max-width: 850px;
+            margin: auto;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #560e8a; /* Dark Purple */
+        }
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Browse Section */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+        h2 {
+            font-size: 32px;
+            color: #560e8a; /* Dark Purple */
+            margin-bottom: 30px;
+        }
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .book {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            width: 250px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .book img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .book-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #560e8a; /* Dark Purple */
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 18px;
+            color: #FFD700; /* Gold */
+            font-weight: bold;
+        }
+        .book-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #560e8a; /* Dark Purple */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+        .footer a {
+            color: #FFD700; /* Gold */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        Fluence Bookstore
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#browse">Browse</a>
+        <a href="#genre">Genre</a>
+        <a href="#authors">Authors</a>
+        <a href="#cart">Cart</a>
+    </div>
+    <!-- Home Section with paragraph -->
+    <div class="home-section" id="home">
+        <div class="content-box">
+            <h1>Welcome to Fluence Bookstore</h1>
+            <p>Books hold the power to unlock vast, boundless worlds, each page a gateway to realms where reality is molded by the imagination. Through the written word, readers are transported into landscapes more vivid than any painted picture. The world books offer is one of endless discovery—each chapter, a new journey into the unknown, where the laws of physics may bend, time may stretch, and the boundaries of existence dissolve into the mist.</p>
+            <p>In this world, mountains rise higher than Everest, draped in golden hues of a never-ending sunset, while oceans stretch out to infinity, their waves whispering secrets of ancient civilizations lost to history. The air is thick with the scent of the unknown—fresh rain, blooming flowers, or the sweet, distant fragrance of cities far across the horizon. Readers find themselves wandering through forests where trees sing songs, and every path promises a new adventure, filled with characters who become lifelong companions.</p>
+            <p>In one moment, you might be aboard a ship, sailing across a sea of stars, navigating the cosmos with only your wits and a trusted crew by your side. The next, you're walking the cobbled streets of a medieval town, hearing the clink of armor and the hum of bustling marketplaces. Or perhaps, you find yourself exploring the mysteries of the future, where technology bends the very essence of human existence, and the boundaries between man and machine blur.</p>
+            <p>The magic of books is not just in the places and characters they introduce, but in the emotions they awaken. In the world they create, you will laugh, cry, and dream with abandon, always left wanting more. Every book leaves a trace on the heart—a lasting imprint, a whisper that calls you back to that world, begging for one more visit, one more chapter.</p>
+            <p>Books offer the ultimate freedom. They are not bound by geography or time, and no matter the place or the era, they provide access to a universe that is both vast and intimate. In the world of books, every page is a promise of something new, something exciting, a new perspective, or an ancient truth waiting to be discovered. They invite readers to step into the unknown and emerge transformed, forever changed by the experiences they’ve lived through the words on those pages.</p>
+        </div>
+    </div>
+    
+    <!-- Browse Section for Books -->
+    <div class="container" id="browse">
+        <h2>Browse Our Books</h2>
+        <div class="books">
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-317018882" alt="Book 1">
+                <div class="book-title">Death Sentence</div>
+                <div class="book-info">
+                    <div class="price">₹499</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-1004384918" alt="Book 2">
+                <div class="book-title">Relic</div>
+                <div class="book-info">
+                    <div class="price">₹599</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-1467540842" alt="Book 3">
+                <div class="book-title">A Summer to Remember</div>
+                <div class="book-info">
+                    <div class="price">₹450</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-1569222862" alt="Book 4">
+                <div class="book-title">A Thousand Pieces of You</div>
+                <div class="book-info">
+                    <div class="price">₹550</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-1634917148" alt="Book 5">
+                <div class="book-title">Harry Potter and the Prisoner of Azkaban</div>
+                <div class="book-info">
+                    <div class="price">₹699</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-1663480330" alt="Book 6">
+                <div class="book-title">The Queen of Hearts</div>
+                <div class="book-info">
+                    <div class="price">₹399</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-2691346786" alt="Book 7">
+                <div class="book-title">Hanging House</div>
+                <div class="book-info">
+                    <div class="price">₹499</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-144976794" alt="Book 8">
+                <div class="book-title">Realm of Ruins</div>
+                <div class="book-info">
+                    <div class="price">₹650</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-2865181770" alt="Book 9">
+                <div class="book-title">And They Lived Happily Ever After</div>
+                <div class="book-info">
+                    <div class="price">₹550</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\th-3894680918" alt="Book 10">
+                <div class="book-title">Girl in the Forest</div>
+                <div class="book-info">
+                    <div class="price">₹450</div>
+                </div>
+            </div>
+            <div class="book">
+                <img src="C:\Users\harsh\OneDrive\Desktop\TheSumofAllThings_cover_June21_option4(1).webp" alt="Book 11">
+                <div class="book-title">The Sum of All Things</div>
+                <div class="book-info">
+                    <div class="price">₹799</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
